@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dasar</title>
+    <style>
+        .header{
+            background-color: #eee;
+            min-height: 50px;
+            text-align: center;
+        }
+        .content{
+            background-color: #ddd;
+            min-height: 500px;
+            overflow: auto;
+        }
+        .footer{
+            background-color: #ccc;
+            min-width: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .menu ul{
+            padding: 0;
+        }
+        .menu ul li{
+            display: inline-block;
+        }
+        .menu ul li a{
+            padding: 10px 20px;
+            text-decoration: none
+        }
+        .logo img{
+            width: 200px;
+        }
+        .thumbnail{
+            background-color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            width: 225px;
+            margin: 10px;
+            float: left;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        ul.submenu{
+            background-color: #eee;
+            border: 1px solid #ccc;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            display: none;
+        }
+        ul.submenu li{
+            display: block;
+        }
+        ul.submenu li a{
+            display: block;
+            padding: 5px 10px;
+        }
+        .menu ul li:hover ul.submenu{
+            display: block;
+        } 
+        .jumbotron{
+            width: 100%;
+            padding: 80px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            background-color: #aaa;
+            background-image:url(image/latar\ belakang.jpeg);
+            background-size: cover;
+        }
+        .btn{
+            border: none;
+            background-color: gray;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+         .btn:hover {background-color: red;}
+        .Buy1 {color: white;}
+        .Buy2 {color: white;}
+        .Buy3 {color: white;}
+        .Buy4 {color: white;}
+        .Buy5 {color: white;}
+        .Buy6 {color: white;}
+
+        .Buy1 {
+            color: red;
+        }
+        .Buy2 {
+            color: red;
+        }
+        .Buy3 {
+            color: red;
+        }
+        .Buy4 {
+            color: red;
+        }
+        .Buy5 {
+            color: red;
+        }
+        .Buy6 {
+            color: red;
+        }
+        .Buy1:hover {
+            background-color: red;
+            color: white;
+        }
+        .Buy2:hover {
+            background-color: red;
+            color: white;
+        }
+        .Buy3:hover {
+            background-color: red;
+            color: white;
+        }
+        .Buy4:hover {
+            background-color: red;
+            color: white;
+        }
+        .Buy5:hover {
+            background-color: red;
+            color: white;
+        }
+        .Buy6:hover {
+            background-color: red;
+            color: white;
+        }
+        .button {
+            background-color: #ddd;
+            border: none;
+            color: red;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+        .button1 {border-radius: 2px;}
+        .button2 {border-radius: 4px;}
+        .button3 {border-radius: 8px;}
+        .button4 {border-radius: 12px;}
+        .button5 {border-radius: 50%;}
+        .button6 {border-radius: 100%;}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            <img src="image/Primogem.jpg" alt="Primogem">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">About</a>
+                    <ul class="submenu">
+                        <li><a href="">Cv</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Portofolio</a></li>
+                    
+                    </ul>
+                </li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="jumbotron">
+            <div class="overlay">
+
+            </div>
+            <h2>Welcome To Mypage</h2>
+            <p>"Mereka mengatakan kegilaan adalah melakukan hal yang sama berulang-ulang dan mengharapkan hasil yang berbeda. Jadi, aku gila karenamu, aku tidak bisa berhenti berharap."</p>
+
+        </div>
+        <div class="content">
+            <h2 class="margin-left:10px">Product By Agung RPL 1</h2>
+            <div class="thumbnail">
+                <h2>Iphone 15 Pro Max</h2>
+                <p>Rp. 19.999.000</p>
+                <button class="btn Buy1">Buy</button> 
+            </div>
+            <div class="thumbnail">
+                <h2>ASUS ROG Phone 8</h2>
+                <p>Rp. 18.000.000</p>
+                <button class="btn Buy2">Buy</button> 
+            </div>
+            <div class="thumbnail">
+                <h2>Samsung Galaxy S24 Ultra</h2>
+                <p>Rp. 25.000.000</p>
+                <button class="btn Buy3">Buy</button> 
+            </div>
+            <div class="thumbnail">
+                <img src="https://th.bing.com/th/id/OIP.XOwzoaeC-OBs52MPndAJIgHaEJ?w=329&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                <h2>Nubia Red Magic 9</h2>
+                <p>Rp. 12.000.000</p>
+                <button class="btn Buy4">Buy</button> 
+            </div>
+            <div class="thumbnail">
+                <h2>Xiaomi Lamborghini K70</h2>
+                <p>Rp. 60.000.000</p>
+                <button class="btn Buy5">Buy</button> 
+            </div>
+            <div class="thumbnail">
+                <h2>Realme GT 5</h2>
+                <p>Rp. 8.999.000</p>
+                <button class="btn Buy6">Buy</button> 
+            </div>     
+        </div>
+        
+        </div>
+
+        <div class="footer">
+            <p>Copyraght 2024 my page</p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

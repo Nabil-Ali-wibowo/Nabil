@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+          *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header{
+            background: url(latar\ belakang.jpeg) center/cover no-repeat;
+            color: rgb(245, 192, 192);
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+        }
+        header::before{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+        header h1{
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        nav{
+            background-color: deepskyblue;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+        .logo a {
+            text-decoration: none;
+            color: rgb(253, 229, 183);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .menu{
+            list-style-type: none;
+            display: flex;
+        }
+        .menu li {
+            margin: 0 1rem;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: rgb(252, 226, 180);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .menu li a:hover{
+            color: hsl(0, 86%, 27%);
+        }
+        .footer{
+            text-align: center;
+            background-color: deepskyblue;
+            color: rgb(230, 211, 211);
+            padding: 1rem 0;
+        }
+        .thumbnail{
+            background-color: deepskyblue;
+            text-align: center;
+            padding: 10px;
+            width: 350px;
+            margin: 10px;
+            float: left;
+        }
+        .thumbnail img{
+            width: 100%;
+        }
+        .button{
+            border-radius: 200px;
+            text-decoration: none;
+            color: white;
+            padding: 5px 5px;
+            background-color: red; 
+        }
+        .button:hover{
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+            box-shadow: red;
+        }
+        .cilient__card{
+        padding: 2rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+        box-sizing: 5px 5px 20px rgba(0, 0, 0, 0,1);
+        text-align: center;
+        }
+        .cilient__card img {
+        max-width: 80px;
+        margin: auto;
+        margin-bottom: 1rem;
+        border-radius: 100%;
+        text-align: center;
+        }
+        .cilient__card P {
+        text-align:center;
+        color: var(--text-dark);
+        text-align: center;
+        }
+    </style>
+
+    </head>
+<body>
+
+    <header>
+        <h1>Jelajahi Nusantara</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">Travel & Tours</a>
+
+            </div>
+            <ul class="menu">
+                <li><a href="beranda_trevel.html">Beranda</a></li>
+                <li><a href="">Hotel</a></li>
+                <li><a href="">Trains</a></li>
+                <li><a href="">Carsrental</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Attractions&Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="footer">
+      <p>&copy; Copy Right 2024 Jelajah Nusantara</p>
+    </footer>
+    <div class="thumbnail">
+        <img src="image/20 f.jpeg" alt="">
+        <h2>Hotel Intra</h2>
+        <p>Rp 2.900.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="thumbnail">
+        <img src="image/foto 17.jpeg" alt="">
+        <h2>Hotel Banyu</h2>
+        <p>Rp 3.000.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="thumbnail">
+        <img src="hotel 200.jpeg" alt="">
+        <h2>Hotel Marina </h2>
+        <p>Rp 2.700.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="thumbnail">
+        <img src="hotel 210.jpeg" alt="">
+        <h2>Hotel Nirmawana</h2>
+        <p>Rp 1.700.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="thumbnail">
+        <img src="oyo.jpeg" alt="">
+        <h2>Oyo Sapta Gria</h2>
+        <p>Rp 1.700.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="thumbnail">
+        <img src="neo.jpeg" alt="">
+        <h2>hotel neo</h2>
+        <p>Rp 3.800.000/Permalam</p>
+        <a href="" class="button">pesan</a>
+    </div>
+    <div class="cilient__card">
+    <img src="image/foto orang 11.jpeg" alt="oto"/>
+    <p>
+        The booking process was seamless, and the conirmation was instant
+        I highly recommed Travel & Trous for hassle-free Hotel bookings.
+    </p>
+</div>
+        <div class="cilient__card">
+        <img src="image/foto orng 12.jpeg" alt="oto"/>
+        <p>
+            The Travels & Trous website provides the best hotels, including facilities, 
+            which help me feel comfortable
+        </p>
+        <img src="image/foto oran 13.jpeg" alt=""/>
+            <p>
+                was able to book a room within minutes, and the hotel execeded my expections, 
+                I appreciate Travels & Tours eiciency and reliability
+            </p>
+        </div>
+    </body>
+</html>
