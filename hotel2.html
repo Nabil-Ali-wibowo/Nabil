@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Nusantara</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header{
+            background: url(pantai.jpg) center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+        }
+        header::before{
+            content: '';
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+        header h1{
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        nav{
+            background-color: rgb(6, 186, 252);
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+        .logo a {
+            text-decoration: none;
+            color: wheat;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .menu{
+            list-style-type: none;
+            display: flex;
+        }
+        .menu li {
+            margin: 0 1rem;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .menu li a:hover{
+            color: hsl(0, 86%, 27%);
+        }
+        
+        .thumbnail{
+            background-color: white;
+            text-align: center;
+            padding: 30px;
+            width: 225px;
+            margin: 20px;
+            float: left;
+            border-radius: 20px;
+        }
+        .thumbnail img{
+            width: 100px;
+            transition: transform  0.3 ease-in-out;
+        }
+        .thumbnail img:hover{
+            transform: scale(1.1);
+        }
+        .button{
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 1px 5px;
+            background-color: red;
+        }
+        .button:hover{
+            background-color: white;
+            border: 1px solid red;
+            color: red;
+            box-shadow: red;
+        }
+        .content{
+            position: absolute;
+            background-color: aqua;
+            height: 650px;
+
+        }
+        .container{
+            background-color: aqua;
+        }
+        .footer{
+            background-color: deepskyblue;
+            margin-top: 650px;
+            text-align: center;
+            color: white;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jelajah Nusantara</h1>
+        </header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="">Travel & Tours</a>
+        
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="Nabil.html">Hotel</a></li>
+                    <li><a href="Nesrin.html">Trains</a></li>
+                    <li><a href="Tita.html">Carsrental</a></li>
+                    <li><a href="Dera.html">Destinations</a></li>
+                    <li><a href="Balqis.html">Attractions&Tours</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+            <div class="thumbnail">
+                <img src="foto kamar.jpeg" alt="">
+                <h2>Kamar hotel Manaeri</h2>
+                <p>Rp 500.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="foto kamar 2.jpeg" alt="">
+                <h2>kamar hotel ace astom</h2>
+                <p>Rp 400.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="Foto kamar 3.jpeg" alt="">
+                <h2>kamar hotel viberi</h2>
+                <p>Rp 600.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="FOTO KAMAR 4.jpeg" alt="">
+                <h2>kamar hotel aston  </h2>
+                <p>Rp 800.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="FOTO KAMAR 5.jpeg" alt="">
+                <h2>Kamar hotel lista</h2>
+                <p>Rp 700.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="FOTO KAMAR 6.jpeg" alt="">
+                <h2>kamar hotel tovo</h2>
+                <p>Rp 105.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="FOTO KAMAR 7.jpeg" alt="">
+                <h2>kamar hotel rivani</h2>
+                <p>Rp 200.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="ZOTO KAMAR 8.jpeg" alt="">
+                <h2>kamar hotel lionel</h2>
+                <p>Rp 600.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <h2>kamar hotel nussa</h2>
+                <p>Rp 600.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+            <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHBJmf82MpVdQwe05J7zmfqcEuHed3vAktPcy5oQNANwb44ydjbWpXUge2w&s" alt="">
+                <h2>kamar hotel sea</h2>
+                <p>Rp 600.000.00/malam</p>
+                <a href="" class="button">Pesan</a>
+            </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; Copy Right 2024 Jelajah Nusantara</p>
+    </div>
+
+        
+</body>
+</html>
